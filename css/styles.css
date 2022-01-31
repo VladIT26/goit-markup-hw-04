@@ -139,6 +139,9 @@ body {
   padding-bottom: 94px;
 }
 .hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 200px 0;
   background-color: var(--footer-color);
   background-image: linear-gradient(
@@ -304,9 +307,8 @@ body {
 
 /* Постоянные клиенты */
 .clients-title {
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -392,7 +394,6 @@ body {
 }
 .projects-list {
   width: calc((100% / 3) - 30px);
-  height: 404px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -402,11 +403,13 @@ body {
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
 }
+.projects-link {
+  display: block;
+  text-decoration: none;
+}
 
-.projects-list:hover,
-.projects-list:focus {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -507,9 +510,6 @@ body {
   color: var(--accent-color);
 }
 .join-section {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
